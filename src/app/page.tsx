@@ -54,7 +54,7 @@ export default function Home() {
           setSource(data.nodes[0].id);
           setDestination(data.nodes[1].id);
         }
-      } catch (err) {
+      } catch {
         setError('Failed to fetch graph data.');
       }
     };
@@ -89,7 +89,7 @@ export default function Home() {
       setNodes(data.nodes);
       setEdges(data.edges);
       setError(null);
-    } catch (err) {
+    } catch {
       setError('An unexpected error occurred.');
       setResult(null);
     } finally {
@@ -121,8 +121,8 @@ export default function Home() {
       if (result) {
         await findRoute();
       }
-    } catch (err: any) {
-      setError(err.message);
+    } catch {
+      setError('An unexpected error occurred while randomizing traffic.');
     } finally {
       setIsRandomizing(false);
     }
