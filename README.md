@@ -2,6 +2,13 @@
 
 **Live Demo**: [https://route-finder-ten.vercel.app/](https://route-finder-ten.vercel.app/)
 
+
+**Video**:
+
+Uploading Screen Recording 2025-06-25 at 6.19.48 PM.mov…
+
+
+
 ---
 
 This project is a web-based traffic navigation simulator that visualizes how real-time traffic conditions affect route planning in a city. It provides an interactive map where users can find the fastest route between two points, taking into account dynamic traffic, road types, and vehicle constraints.
